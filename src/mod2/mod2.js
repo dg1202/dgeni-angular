@@ -1,5 +1,10 @@
 /**
+ * @ngdoc module
+ * @name mod2
+ * @description  
  * Controllers and directives
+ * 
+ * @requires mod1
  */
 angular.module('mod2', ['mod1'])
 
@@ -15,11 +20,14 @@ angular.module('mod2', ['mod1'])
 }])
 
 /**
+ * @ngdoc directive
+ * @name directive1
+ * @description
  * Does something special with the DOM
  */
 .directive('directive1', function() {
   return {
-    restrict: 'E',
+    restrict: 'A',
     scope: {
       attr1: '='
     },
